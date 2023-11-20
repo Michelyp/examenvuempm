@@ -5,8 +5,8 @@
   <router-link :to="'/zonaUsuario/compras'" class="btn btn-primary"
     >Compras</router-link
   >
-  <router-link :to="'/'" class="btn btn-primary">RealizarCompra</router-link>
-  <button  @click="cerrar()" class="btn btn-primary">Cerrar Sesion</button>
+  <router-link :to="'/zonaUsuario/comprar'" class="btn btn-primary">RealizarCompra</router-link>
+  <button  @click="cerrar()" class="btn btn-warning">Cerrar Sesion</button>
 </template>
 
 <script>

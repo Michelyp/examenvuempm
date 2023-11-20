@@ -7,6 +7,8 @@ import RegistrarComponent from './components/RegistrarComponent.vue';
 import ZonaUsuario from './components/ZonaUsuario.vue';
 import PerfilUsuario from './components/PerfilUsuario.vue';
 import ComprasUsuario from './components/ComprasUsuario.vue';
+import CompradoCubo from './components/CompradoCubo.vue';
+import ComprarCubo from './components/ComprarCubo.vue';
 
  
 const myRoutes = [
@@ -33,6 +35,12 @@ const myRoutes = [
     },
     {
         path: "/zonaUsuario/compras", component: ComprasUsuario
+    },
+    {
+        path: "/zonaUsuario/comprar", component: ComprarCubo
+    },
+    {
+        path: "/zonaUsuario/comprar/:idCubo", component: CompradoCubo
     }
 
 ]

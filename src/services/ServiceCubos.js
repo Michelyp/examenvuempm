@@ -96,15 +96,17 @@ export default class ServiceCubos {
       })
     });
   }
-  postPedidos(pedido,idCubo) {
+  postPedidos(idCubo) {
     const headers = this.getToken();
     return new Promise(function (resolve) {
-      var request = "api/compra/insertarpedido"+idCubo;
+      var request = "api/compra/insertarpedido/" +idCubo;
       var url = Global.urlApiCubos + request;
+      var body="";
       //se enviara la url con el headers del token 
-      axios.post(url, pedido, { headers }).then(response => {
+      axios.post(url, body, { headers }).then(response => {
         resolve(response);
       })
     });
+  
   }
 }
